@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class BaseResponse: Codable {
+    var status : String
+    var totalResults : Int64
+    var articles : [ArticleModel] = []
+}
